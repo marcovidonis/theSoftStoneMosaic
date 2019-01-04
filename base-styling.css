@@ -1,0 +1,25 @@
+:root {
+  --main-bg-color: #FDFDFD;
+  --main-font-color: #707070;
+
+  --main-font-family: sans-serif;
+
+  /* --section-bg-color: #1AA6B7;
+  --btn-bg-color: rgb(217, 236, 242);
+  --btn-bg-color-fade: rgba(217, 236, 242, 0.5);
+  --active-color: #D44E6A;
+  --side-margin: 20px; */
+}
+
+body{
+  margin: 0px;
+  background-color: var(--main-bg-color);
+  color: var(--main-font-color);
+  font-family: var(--main-font-family);
+  position: relative;
+}
+
+#site-title {
+  font-family: 'Leckerli One', cursive;
+  font-size: 40px;
+}
