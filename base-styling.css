@@ -1,6 +1,8 @@
 :root {
-  --main-bg-color: #FDFDFD;
+  --main-bg-color: black; /*#FDFDFD;*/
   --main-font-color: #707070;
+  --main-shadow-color: #707070;
+
 
   --main-font-family: sans-serif;
 
@@ -16,10 +18,54 @@ body{
   background-color: var(--main-bg-color);
   color: var(--main-font-color);
   font-family: var(--main-font-family);
-  position: relative;
+  font-size: 16px;
 }
 
 #site-title {
   font-family: 'Leckerli One', cursive;
   font-size: 40px;
+}
+
+.big-link {
+  font-size: 24px;
+}
+
+nav {
+  box-shadow: 0px 2px 2px var(--main-shadow-color);
+  background-color: var(--main-bg-color);
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 25px;
+}
+
+footer {
+  box-shadow: inset 0 2px 2px var(--main-shadow-color);
+  padding: 25px 20px;
+}
+
+footer a {
+  color: inherit;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
 }
