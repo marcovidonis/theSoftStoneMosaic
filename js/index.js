@@ -1,20 +1,14 @@
 
 var blur = document.querySelector('.blur');
-// var cut = document.querySelector('.cut');
+var mainLogo = document.getElementById("main-logo")
 
-// function show(index) {
-//   blur.style.opacity = 1;
-// }
-//
-// function unDim() {
-//   bg.classList.remove('bg--dimmed');
-// }
-//
-// cut.addEventListener("mouseenter", (event) => { dim(); });
-// cut.addEventListener("mouseleave", (event) => { unDim(); });
 document.onreadystatechange = function () {
   if (document.readyState === "complete") {
     blur.style.opacity = 1;
     console.log("opacity done");
+
+    mainLogo.style.opacity = 1;
+    mainLogo.style.transform = "scale(1.0)";
+    console.log("Main logo appeared");
   }
 }
